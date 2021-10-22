@@ -1,0 +1,26 @@
+name: Send Microsoft Teams message
+
+on:
+  workflow_dispatch:
+    inputs:
+      processTeams:
+        description: "Do you want to send a message? (yes/no)"
+        required: true
+        default: 'yes'
+jobs:
+
+  Send-Message:
+    runs-on: ubuntu-latest
+    name: Team message send
+    
+    steps:
+      - name: Send a message to Microsoft Teams
+        uses: aliencube/microsoft-teams-actions@v0.8.0
+        with:
+          webhook_uri: ${{ secrets.TEAMS_URI }}
+          title: Hello, GitHub Summits 2021
+          summary: This is a demonstration of testing Teams message
+          text: Welcome to Summit. A playground of possibility, where you can explore ways to engage and connect. And remember... curiosity thrilled the Octocat.
+          theme_color: red
+          sections: '[{ "activityTitle": "hello world" }]'
+          actions: '[{ "@type": "OpenUri", "name": "lorem ipsum", "targets": [{ "os": "default", "uri": "https://localhost" }] }]'
