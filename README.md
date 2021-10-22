@@ -5,7 +5,7 @@
 In here, you will navigate across the **GitHub Actions planet** to discover challenging yet interesting GitHub Actions mission in each continents, where each continent is represented by a GitHub Issue.
 
 ## 🍿 Our navigation route
-1. **GitHub Actions continent** - Hello, GitHub Actions planet
+1. [**GitHub Actions continent** - Hello, GitHub Actions planet](https://github.com/bryant-github-universe-2021/GitHubUniverse2021-NA/issues/1)
 2. **Project Management continent** - We need to set a plan! Let's come up with a plan what do we need to survive in this planet with GitHub Project Board
 3. **Group Actions continent** - We want to assign a Project Board for each member
 4. **IssueOps continent** - Let's create a best practice repository with IssueOps
