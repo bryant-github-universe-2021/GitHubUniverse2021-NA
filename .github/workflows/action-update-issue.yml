@@ -23,7 +23,6 @@ jobs:
               state: "closed"
             })
             
-            echo "Context: " + context.issue
             
       - name: Open a issue
         uses: actions/github-script@v5
