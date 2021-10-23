@@ -21,4 +21,4 @@ jobs:
             channel-id: 'github-universe'
             slack-message: 'Posting from GitHub Actions planet!'
           env:
-            SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+            SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
