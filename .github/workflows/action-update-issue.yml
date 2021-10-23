@@ -45,7 +45,7 @@ jobs:
               owner: context.payload.organization.name,
               repo: context.payload.repository.name,
               issue_number: context.issue.number,
-              body: "# Congratulation. You are done with " +  context.payload.issue.title + " ![image](https://user-images.githubusercontent.com/5396174/137656679-43d43513-beef-4e4a-bcd9-fec7941d07a5.png)" + "## Let's move to the [next issue](https://github.com/" + context.payload.organization.login + "/" + context.payload.repository.name + "/issues/" + context.payload.issue.number + ")" 
+              body: "# Congratulation. You are done with " +  context.payload.issue.title + " ![image](https://user-images.githubusercontent.com/5396174/137656679-43d43513-beef-4e4a-bcd9-fec7941d07a5.png)" + " ## Let's move to the [next issue](https://github.com/" + context.payload.organization.login + "/" + context.payload.repository.name + "/issues/" + context.payload.issue.number + ")" 
             })
             
             
