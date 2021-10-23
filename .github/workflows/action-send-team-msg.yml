@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       processTeams:
-        description: "Do you want to send a message? (yes/no)"
+        description: "Type your greeting here"
         required: true
-        default: 'yes'
+        default: ''
 jobs:
 
   Send-Message:
@@ -20,7 +20,7 @@ jobs:
           webhook_uri: ${{ secrets.MICROSOFT_TEAM_URL }}
           title: Hello, GitHub Actions planet
           summary: This is a demonstration of testing Teams message
-          text: Welcome to GitHub Actions planet. A playground of possibility, where you can explore ways to engage and connect. And remember... curiosity thrilled the Octocat.
+          text: Welcome to GitHub Actions planet. A playground of possibility, where you can explore ways to engage and connect. And remember... curiosity thrilled the Octocat. This is a greeting from ${{ github.events.inputs.processTeams }}
           theme_color: red
           sections: '[{ "activityTitle": "hello world" }]'
           actions: '[{ "@type": "OpenUri", "name": "lorem ipsum", "targets": [{ "os": "default", "uri": "https://localhost" }] }]'
