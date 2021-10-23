@@ -4,6 +4,8 @@
 
 In here, you will navigate across the **GitHub Actions planet** to discover challenging yet interesting GitHub Actions mission in each continents, where each continent is represented by a GitHub Issue.
 
+![mona](https://user-images.githubusercontent.com/5396174/138539357-bb27a65d-1fe8-4dbb-8502-9e73f1f2bbd0.gif)
+
 ## 🍿 Our navigation route
 1. [**GitHub Actions continent** - Hello, GitHub Actions planet](https://github.com/bryant-github-universe-2021/GitHubUniverse2021-NA/issues/1)
 2. **Project Management continent** - We need to set a plan! Let's come up with a plan what do we need to survive in this planet with GitHub Project Board
@@ -13,3 +15,4 @@ In here, you will navigate across the **GitHub Actions planet** to discover chal
 6. **DevOps Infra continent** - We will build an infrastructure with Terraform and also Azure Webap
 7. **DevOps Apps continent** - Deploy an application to Azure we
 8. **Let's review what we had**
+
