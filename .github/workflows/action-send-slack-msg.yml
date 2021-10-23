@@ -1,0 +1,21 @@
+name: Send Slack message
+
+on:
+  workflow_dispatch:
+      inputs:
+         myName:
+            description: "Please type in your name"
+            required: true
+            default: ''
+
+jobs:
+   Hello-GitHub-Actions:
+      runs-on: ubuntu-latest
+      name: Post to a Slack channel
+
+      steps:
+        - name: Hello, GitHub Actions planet
+          id: slack
+          uses: slackapi/slack-github-action@v1.14.0
+          env:
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
