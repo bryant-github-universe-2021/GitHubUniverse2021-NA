@@ -17,8 +17,8 @@ jobs:
           script: |
             // Close this issue
             github.rest.issues.update({
-              owner: context.organization.login,
-              repo: context.repository.name,
+              owner: context.payload.organization.login,
+              repo: context.payload.repository.name,
               issue_number: context.issue.number,
               state: "closed"
             })
@@ -30,8 +30,8 @@ jobs:
           script: |
             // Open a next issue
             github.rest.issues.update({
-              owner: context.organization.login,
-              repo: context.repository.name,
+              owner: context.payload.organization.login,
+              repo: context.payload.repository.name,
               issue_number: context.issue.number + 1,
               state: "open"
             })
@@ -42,8 +42,8 @@ jobs:
           script: |
             // comment on this issue
             github.rest.issues.createComment({
-              owner: context.organization.name,
-              repo: context.repository.name,
+              owner: context.payload.organization.name,
+              repo: context.payload.repository.name,
               issue_number: context.issue.number,
               body: "# Congratulation. You are done with " +  context.payload.issue.title + "\n ![image](https://user-images.githubusercontent.com/5396174/137656679-43d43513-beef-4e4a-bcd9-fec7941d07a5.png) \n" + "## Let's move to the [next issue](https://github.com/" + context.payload.organization.login + "/" + context.payload.repository.name + "/issues/" + (context.payload.issue.number + 1) + ")" 
             })
