@@ -1,0 +1,42 @@
+name: Update issue
+
+on:
+  issues:
+    types: closed
+    
+jobs:
+  Manage-Issues:
+    runs-on: ubuntu-latest
+    name: Close and Open issue
+    
+    steps:
+      - name: Close and Open issue
+        uses: actions/github-script@v5
+        with:
+          script: |
+            // Close this issue
+            github.rest.issues.update({
+              owner: "bryant-github-universe-2021",
+              repo: "GitHubUniverse2021-NA",
+              issue_number: context.issue.number,
+              state: closed
+            }
+            
+             // comment on this issue
+             github.rest.issues.createComment({
+              owner: "bryant-github-universe-2021",
+              repo: "GitHubUniverse2021-NA",
+              issue_number: context.issue.number,
+              body: "Move to the next issue"
+            }
+            
+            
+            // Open a next issue
+            github.rest.issues.update({
+              owner: "bryant-github-universe-2021",
+              repo: "GitHubUniverse2021-NA",
+              issue_number: context.issue.number + 1,
+              state: open
+            }
+            
+            
