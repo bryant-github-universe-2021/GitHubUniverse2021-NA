@@ -18,6 +18,7 @@ jobs:
           id: slack
           uses: slackapi/slack-github-action@v1.14.0
           with:
-            payload: "{\"key\":\"value\",\"foo\":\"bar\"}" # This data can be any valid JSON from a previous step in the GitHub Action
+            channel-id: 'github-universe'
+            slack-message: 'Posting from GitHub Actions planet!'
           env:
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+            SLACK_BOT_TOKEN: ${{ secrets.SLACK_WEBHOOK_URL }}
