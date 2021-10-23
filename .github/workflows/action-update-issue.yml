@@ -45,7 +45,7 @@ jobs:
               owner: "bryant-github-universe-2021",
               repo: "GitHubUniverse2021-NA",
               issue_number: context.issue.number,
-              body: "# Congratulation. You are done with " +  context.payload.issue.title + "\n ![image](https://user-images.githubusercontent.com/5396174/137656679-43d43513-beef-4e4a-bcd9-fec7941d07a5.png) \n" + "Let's move to the [next issue](" + context.payload.issue.html_url + ")" 
+              body: "# Congratulation. You are done with " +  context.payload.issue.title + "\n ![image](https://user-images.githubusercontent.com/5396174/137656679-43d43513-beef-4e4a-bcd9-fec7941d07a5.png) \n" + "## Let's move to the [next issue](https://github.com/" + context.payload.organization.login + "/" + context.payload.repository.name + "/issues/" + (context.payload.issue.number + 1) + ")" 
             })
             
             
