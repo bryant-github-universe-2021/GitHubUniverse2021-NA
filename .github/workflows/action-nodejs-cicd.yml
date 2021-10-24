@@ -16,7 +16,7 @@ env:
   
 defaults:
   run:
-    working-directory: dev/appdev/nodejs
+    working-directory: devops/appdev/nodejs
 
 jobs:
   NodeJS-Test:
