@@ -77,7 +77,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.TOKEN_ACTION }}
+          password: ${{ secrets.TOKEN_PACKAGE }}
           
       - name: Build and push
         id: docker_build
@@ -102,7 +102,7 @@ jobs:
         with: 
           login-server: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.TOKEN_ACTION }}
+          password: ${{ secrets.TOKEN_PACKAGE }}
           
       - name: Set Web App ACR authentication
         uses: Azure/appservice-settings@v1
@@ -112,7 +112,7 @@ jobs:
            [
              {
                  "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
-                 "value": "${{ secrets.TOKEN_ACTION }}",
+                 "value": "${{ secrets.TOKEN_PACKAGE }}",
                  "slotSetting": false
              },
              {
