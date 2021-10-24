@@ -4,7 +4,7 @@
 
 In here, you will navigate across the **GitHub Actions planet** to discover challenging yet interesting GitHub Actions mission in each continents, where each continent is represented by a GitHub Issue.
 
-## We will jump through the hoops 💃 and all the challenges ⛰️ 🔥, but it will be fun!
+## We will jump through the hoops 🏃 and all the challenges ahead of us ⛰️ 🔥, but it will be fun! 🎮
 
 ![mona](https://user-images.githubusercontent.com/5396174/138539357-bb27a65d-1fe8-4dbb-8502-9e73f1f2bbd0.gif)
 
