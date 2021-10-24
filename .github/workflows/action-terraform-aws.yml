@@ -1,4 +1,4 @@
-name: Run Terraform script to provision AWS instance with a Load Balancer
+name: Run Terraform to provision AWS instance with a Load Balancer
 
 on:
   workflow_dispatch:
