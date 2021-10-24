@@ -3,24 +3,26 @@ name: Run Terraform script to provision Microsoft Azure instance with a Load Bal
 on:
   workflow_dispatch:
     inputs:
-      provision_aws:
+      provision_azure:
         description: "Do you want to run Azure provision process? (yes/no)"
         required: true
         default: 'yes'
         
 defaults:
   run:
-    working-directory: infra/azure
+    working-directory: devops/infra/azure
     
 env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+  ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 
 jobs:
   Terraform-Script:
     runs-on: ubuntu-latest
     name: Run Terraform script
-    if: ${{ github.event.inputs.provision_aws == 'yes' }}
+    if: ${{ github.event.inputs.provision_azure == 'yes' }}
 
     steps:
       - name: Checkout files
