@@ -1,4 +1,4 @@
-name: Create repository
+name: Create repository with IssueOps
 on:
   issues:
     types: [opened]
