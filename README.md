@@ -1,8 +1,10 @@
-## Hi there, this is Mona the Octocat. Welcome to GitHub Actions planet 👋
+# Hi there, this is Mona the Octocat. Welcome to GitHub Actions planet 👋
 
 ![mona-ocean](https://user-images.githubusercontent.com/5396174/137653022-15381990-c9eb-45e7-af82-4881fc3f0d19.gif)
 
 In here, you will navigate across the **GitHub Actions planet** to discover challenging yet interesting GitHub Actions mission in each continents, where each continent is represented by a GitHub Issue.
+
+## We will jump through the hoops 💃 and all the challenges ⛰️ 🔥, but it will be fun!
 
 ![mona](https://user-images.githubusercontent.com/5396174/138539357-bb27a65d-1fe8-4dbb-8502-9e73f1f2bbd0.gif)
 
