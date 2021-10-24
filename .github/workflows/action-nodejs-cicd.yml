@@ -46,13 +46,13 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: Test Result
-          path: ${{ github.workspace }}/appdev/nodejs/output.txt
+          path: ${{ github.workspace }}/devops/appdev/nodejs/output.txt
           
       - name: Upload the test coverage result to Artifact
         uses: actions/upload-artifact@main
         with:
           name: Test Coverage Result
-          path: ${{ github.workspace }}/appdev/nodejs/coverage
+          path: ${{ github.workspace }}/devops/appdev/nodejs/coverage
           
       - name: Save NPM output
         id: id-npm-test
