@@ -10,7 +10,7 @@ on:
 
 env:
   PACKAGES_TOKEN: ${{secrets.TOKEN_ACTION}}
-  AZURE_RESOURCE_GROUP: github-action-group
+  AZURE_RESOURCE_GROUP: GitHubUniverse2021-AppDevDemo-group
   AZURE_APP_PLAN: actions-bryant-deployment
   AZURE_LOCATION: '"Central US"'
   #################################################
