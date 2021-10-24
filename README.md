@@ -1,4 +1,5 @@
-# Hi there, this is Mona the Octoca :octocat: Welcome to GitHub Actions planet 👋
+# Hi there, this is Mona the Octocat :octocat: 
+## "Welcome to GitHub Actions planet" 👋
 
 ![mona-ocean](https://user-images.githubusercontent.com/5396174/137653022-15381990-c9eb-45e7-af82-4881fc3f0d19.gif)
 
