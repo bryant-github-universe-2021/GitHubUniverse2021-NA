@@ -31,7 +31,7 @@ body:
     attributes:
       label: Team Permission
       description: Type in the team that you want to apply the admin permission
-      placeholder: ex. Avengers
+      placeholder: ex. GitHubUniverse2021Avengers
     validations:
       required: false
       
