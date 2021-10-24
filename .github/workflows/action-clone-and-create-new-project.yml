@@ -4,7 +4,7 @@ on:
     inputs:
       projectID:
         description: "Specify the unique Project ID of project that will be copied from"
-        default: "13391105"
+        default: "13592509"
         required: true
       descNewProject:
         description: "Provide the description of new Project"
