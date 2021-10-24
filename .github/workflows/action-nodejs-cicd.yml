@@ -12,11 +12,11 @@ env:
   DOCKER_IMAGE_VERSION: ${{ github.sha }}
   AZURE_WEBAPP_NAME: sample-nodejs-app-bryant
   IMAGE_REGISTRY_URL: ghcr.io
-  AZURE_RESOURCE_GROUP: github-action-group
+  AZURE_RESOURCE_GROUP: GitHubUniverse2021-AppDevDemo-group
   
 defaults:
   run:
-    working-directory: appdev/nodejs
+    working-directory: dev/appdev/nodejs
 
 jobs:
   NodeJS-Test:
@@ -85,7 +85,7 @@ jobs:
         with:
           context: appdev/nodejs
           push: true
-          tags: ghcr.io/github-demo-bson/nodejs/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_VERSION }}
+          tags: ghcr.io/bryant-github-universe-2021/nodejs/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_VERSION }}
           
   Deploy-Azure:
     runs-on: ubuntu-latest
@@ -131,6 +131,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          images: ${{ env.IMAGE_REGISTRY_URL }}/github-demo-bson/nodejs/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_VERSION }}
+          images: ${{ env.IMAGE_REGISTRY_URL }}/bryant-github-universe-2021/nodejs/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_VERSION }}
           
  
