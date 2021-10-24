@@ -4,11 +4,11 @@ on:
     inputs:
       ownerProject:
         description: "Provide the owner (e.g. username or organization name) where you want to find out Project Boards"
-        default: context.payload.organization.login
+        default: ${{ context.payload.organization.login }}
         required: true
       repoProject:
         description: "Provide the repository where you want to find out Project Boards"
-        default: context.payload.repository.name
+        default: ${{ context.payload.repository.name }}
         required: true
         
 permissions:
