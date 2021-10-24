@@ -10,7 +10,7 @@ on:
         
 defaults:
   run:
-    working-directory: infra/aws
+    working-directory: devops/infra/aws
     
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
