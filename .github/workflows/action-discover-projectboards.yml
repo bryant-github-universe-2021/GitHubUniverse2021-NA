@@ -3,13 +3,10 @@ on:
   workflow_dispatch:
     inputs:
       ownerProject:
-        description: "Provide the owner (e.g. username or organization name) where you want to find out Project Boards"
-        default: ${{ context.payload.organization.login }}
+        description: "Do you want to discover Project Boards?"
+        default: "yes"
         required: true
-      repoProject:
-        description: "Provide the repository where you want to find out Project Boards"
-        default: ${{ context.payload.repository.name }}
-        required: true
+
         
 permissions:
   actions: none
@@ -35,8 +32,8 @@ jobs:
           script: |       
             try {
               listProjects = await github.projects.listForRepo({
-                owner: "${{ github.event.inputs.ownerProject }}",
-                repo: "${{ github.event.inputs.repoProject }}",
+                owner: context.payload.organization.login ,
+                repo: context.payload.repository.name ,
                 per_page: 100
               })
              
